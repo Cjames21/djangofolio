@@ -1,0 +1,37 @@
+
+
+/* General Styles */
+body .contact-container {
+    margin-bottom: 40px;
+}
+
+body .desktop-header h1 {
+    text-align: center;
+}
+
+.contact-container .submit-button {
+    color: white;
+    background-color: #121212;
+    height: 50px;
+    width: 80px;
+    font-family: body-content;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width:601px) {
+    body .contact-container > div {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .contact-container hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container form {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,20 @@
+.thank-you-container {
+    text-align: center;
+    height: 70vh;
+    padding-top: 60px;
+}
+
+.thank-you-container h1, .thank-you-container h3 {    
+    font-size: 2em;
+}
+
+.thank-you-container h3 {
+    padding-top: 30px;
+}
+
+@media screen and (min-width: 601px) {
+    .thank-you-container h1, .thank-you-container h3 {
+        font-size: 3.5em;
+    }
+}
+

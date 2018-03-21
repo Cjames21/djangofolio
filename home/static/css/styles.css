@@ -1,0 +1,249 @@
+/* 
+    Website color scheme:
+        Text primary: #121212
+*/
+
+
+/* General Styles */
+@font-face {
+    font-family: body-content;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+
+body {
+    color: #121212;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+body p, body h5 {
+    font-family: body-content;
+    font-weight: bold;
+}
+
+.logo-container {
+    margin: auto;
+    width: 40%;
+}
+
+.logo-container .site-logo {
+    display: block;
+    margin: auto;
+}
+
+hr {
+    width: 70%; 
+}
+
+/* Top Bar styles */
+body .top-bar {
+    margin-bottom: 50px;
+}
+
+body .top-bar, .top-bar ul {
+    background-color: transparent !important;
+}
+
+.top-bar ul li {
+    margin-right: 60px;
+}
+
+.top-bar li a, .mobile-nav-bar li a {
+    color: #121212;
+    font-family: body-content;
+    font-size: 1.2em;
+    font-weight: 500;   
+}
+
+.mobile-nav-bar {
+    margin-top: 15px;
+}
+
+.mobile-nav-bar li a:hover {
+    text-decoration: underline;
+}
+
+.top-bar li:hover {
+    text-decoration: underline;
+}
+
+.top-bar .top-bar-left h4 {
+    padding-top: 5px;
+}
+
+/* Header General Styles */
+.header {
+    height: 50%;
+}
+
+.header h1 {
+    font-weight: bold;
+}
+
+.header h4 {
+    float: right;
+    padding-right: 50px;
+}
+
+.header ul {
+    font-size: 1.8em;
+    float: right;
+}
+
+.header ul li {
+    padding-left: 10px;
+}
+
+.header ul li:hover {
+    cursor: pointer;
+}
+
+
+.header .see-more-container {
+    position: relative;
+}
+
+.see-more-container button {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    font-family: body-content;
+}
+
+/* About Me section styles */
+.section-container h1 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.section-container p {
+    font-size: 1.2em;
+}
+
+.hire-me-icon-container img {
+    border-radius: 50%;
+}
+
+/* Hire Me section styles */
+.section-container .hire-me-icon-container {
+    text-align: center;
+}
+
+.section-container .hire-me-icon {
+    font-size: 13em;
+    position: relative;
+    top: 20px;
+}
+
+/* Back to top button */
+.back-to-top-container {
+    position: fixed;
+    border-radius: 60%;
+    bottom: 0;
+    right: 0;
+    font-size: 2.5em;
+    background-color: #121212;
+    color: #FEFEFE;
+    margin-bottom: 30px;
+    margin-right: 30px; 
+    text-align: center;
+}
+
+.back-to-top-container button {
+    
+    width: 70px;
+    height: 70px;
+}
+
+.back-to-top-container a {
+    color: #FEFEFE;
+}
+
+/* Footer styles */
+
+.footer-container {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.footer-container div {
+    margin: 0 auto;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1030px) {
+    /* Desktop Navigation Styles */
+
+    /* Desktop Header Styles */
+    .header {
+        margin-left: 150px;
+    }
+
+    .header ul {
+        margin-right: 8%;
+    }
+
+
+    /* Desktop About me Section styles */
+
+    /* Desktop Hire Me section */
+}
+
+
+
+
+
+/* Tablet Styles */
+@media screen and(max-width: 1029px) {
+    
+}
+
+@media screen and (min-width: 601px) {
+    .mobile-nav-bar {
+        display: none;
+    }
+
+    .hire-me-icon-container .mobile-selfie {
+        display: none;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    body .top-bar {
+        display: none;
+    }
+
+    body .header {
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .header ul {
+        float: none;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header ul li {
+        display: inline-block;
+    }
+
+    .hire-me-icon-container .selfie {
+        display: none;
+    }
+
+    .section-container .hire-me-icon {
+        position: relative;
+        top: -20px;
+        font-size: 7em;
+    }
+}
+

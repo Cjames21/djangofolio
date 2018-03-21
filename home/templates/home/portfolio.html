@@ -1,0 +1,32 @@
+{% extends "home/boilerplate.html" %}
+
+{% block content %}
+    {% include "home/includes/nav-bar.html" %}
+    {% include "home/includes/portfolio/portfolio-header.html" %}
+    <div class="expanded row" id="photo_gallery">
+        <div class="large-3 small-12 columns">
+            <div class="panel-container">
+                <h2>Photo App</h2>
+                <p>- view -</p>
+            </div>
+        </div>
+        <div class="large-3 small-12 columns">
+            <div class="panel-container">
+                <h2>Chumleighs</h2>
+                <p>- view -</p>
+            </div>
+        </div>
+        <div class="large-3 small-12 columns">
+            <div class="panel-container">
+                <h2>TBD...</h2>
+            </div>
+        </div>
+        <div class="large-3 small-12 columns">
+            <div class="panel-container">
+                <h2>TBD...</h2>
+            </div>
+        </div>
+    </div>
+
+    {% include "home/includes/footer.html" %}
+{% endblock content %}

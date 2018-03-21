@@ -1,0 +1,25 @@
+<div class="top-bar">
+    <div class="top-bar-left">
+        {% load staticfiles %}
+        <img src="{% static 'img/logo-150-by-50.png' %}" />
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu navigation">
+            <li><a href="{% url 'index' %}">HOME</a></li>
+            <li><a href="index.html#about-me">ABOUT ME</a></li>
+            <li><a href="{% url 'contact_me' %}">WORK</a></li>
+            <li><a href="{% url 'portfolio' %}">PORTFOLIO</a></li>
+        </ul>
+    </div>
+</div>
+
+<nav class="mobile-nav-bar hide-for-large">
+    <div class="extended row">
+        <ul class="menu navigation">
+            <li><a href="{% url 'index' %}">HOME</a></li>
+            <li><a href="index.html#about-me">ABOUT ME</a></li>
+            <li><a href="{% url 'contact_me' %}">WORK</a></li>
+            <li><a href="{% url 'portfolio' %}">PORTFOLIO</a></li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,84 @@
+<!-- Contact form -->
+<!-- Header -->      
+{% load staticfiles %}
+<div class="logo-container hide-for-large">
+    <img  class="site-logo" src="{% static 'img/logo-200ps.png' %}" />
+  </div>
+
+  <div class="row desktop-header">
+    <div class="large-2 columns hide-for-small">
+      <p>
+
+      </p>
+    </div>
+    <div class="small-12 large-8 columns">
+      <h1>Looking to get in touch? Here's how!</h1>
+    </div>
+    <div class="large-2 columns hide-for-small">
+      <p>
+
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row extended contact-container">
+    <!-- Contact form -->
+    <div class="large-6 small-12 columns">
+      <h1>Contact Form</h1>
+      <p>Have an idea you'd like to send my way? Feel free to fill out this contact form 
+        and I'll be in touch with you as soon as possible!
+      </p>
+      <br />
+      <form action='/thank_you/' method="POST" class="contact-form" id="contact-form">{% csrf_token %}
+
+        {{ form }}
+        <!-- <label for="fName">First Name: </label>
+        <input id="fName" name="fName" type="text" />
+
+        <label for="lName">Last Name: </label>
+        <input id="lName" name="lName" type="text" />
+
+        <label for="phone">Phone: </label>
+        <input id="phone" name="phone" type="tel" />
+
+        <label for="email">E-mail: </label>
+        <input id="email" name="email" type="email" />
+
+        <label for="projType">Project Type</label>
+        <input id="projType" name="projType" type="text" />
+
+        <label for="projDesc">Project Description: </label>
+        <input id="projDesc" name="projDesc" type="text" placeholder="Please provide a brief description of the project you have in mind..." /> -->
+
+        <input id="submit" type="submit" name="submit" class="submit-button" value="Submit" />
+      </form>
+    </div>
+
+    <hr />
+
+    <!-- Contact information -->
+    <div class="large-6 small-12 columns">
+      <h1>Contact Information</h1>
+      <p>If you have any other questions, or were looking to get in touch outside of this website,
+        here's my contact information.</p>
+
+      <div class="row footer-container">
+        <div class="small-12 columns">
+          <h5>charlestdjames1@gmail.com</h5>
+        </div>
+      <div class="small-12 columns">
+        <h5>
+          <span onclick="window.open('https://twitter.com/cjameswebdev/media', '_blank')"><i class="fa fa-twitter"></i></span>
+          <span onclick="window.open('https://www.linkedin.com/in/charlie-james-16981479/', '_blank')"><i class="fa fa-linkedin"></i></span>
+          <span onclick=""><i class="fa fa-paper-plane"></i></span>
+        </h5>
+      </div>
+        <div class="small-12 columns">
+          <h5>(613) 803-6794</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
